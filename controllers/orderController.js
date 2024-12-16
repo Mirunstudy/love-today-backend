@@ -8,7 +8,7 @@ const currency = 'inr'
 const deliveryCharge = 10
 
 //get way initialise
-const stripe = ""
+const stripe = new Stripe(process.env.SK_KEY)
 
 //Placing order using COD method
 const placeOrder = async(req,res)=>{
